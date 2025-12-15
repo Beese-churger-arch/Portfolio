@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Tailwind</title>
+    <style>
+/* Typewriter CSS */
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #fff;
+  width: 0;
+  animation: typing 4s steps(40) forwards, blink .7s infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 10ch }   /* adjust length */
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+</style>
+
+
+</head>
+<body class="bg-gray-900 overflow-x-hidden">
+    <div id="Navbar" class="fixed top-0 w-full bg-purple-700 z-50 transition-colors duration-300">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center border">
+    
+    <!-- Logo -->
+    <a href="#" class="flex items-center gap-3 font-bold text-xl text-black">
+      <img src="s.jpg" class="w-8 h-8 rounded-full">
+      Abiral Shrestha
+    </a>
+
+    <!-- Links -->
+    <div class="ml-auto hidden md:flex gap-6 font-mono font-bold text-black">
+      <a href="#projects" class="hover:underline">Projects</a>
+      <a href="#education" class="hover:underline">Education</a>
+      <a href="#skills" class="hover:underline">Skills</a>
+      <a href="#contact" class="hover:underline">Contact</a>
+    </div>
+
+  </div>
+</div>
+
+    
+    
+    <section class="relative min-h-screen flex items-center bg-gray-900 pt-32">
+
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+    <!-- TEXT -->
+    <div class="text-white text-center lg:text-left ml-20">
+      <p class="text-blue-300 mb-3 ml-4">Hi, my name is</p>
+
+      <h1 class="text-5xl md:text-6xl font-serif font-bold mb-4">
+        Abiral Shrestha
+      </h1>
+
+      <p class="text-gray-400 mb-4 text-6xl font-serif">
+        And this is my portfolio
+      </p>
+
+      <p class="text-xl text-gray-300 font-mono mb-8">
+        I am a <span id="typewriter" class="text-purple-400"></span>
+      </p>
+
+      <a href="#projects"
+         class="inline-block bg-purple-600 px-7 py-3 rounded hover:bg-purple-500 transition">
+        Explore my projects
+      </a>
+    </div>
+
+    <!-- IMAGE (hidden on small screens) -->
+    <div class="relative hidden lg:flex justify-center ml-20">
+      <img src="./images/blob.png" class="w-96 opacity-80 h-auto object-contain z-0 mx-auto
+         -translate-y-20 ">
+      <img src="./images/copy.png"  class="absolute inset-0 w-[28rem] h-auto object-contain z-10 mx-auto
+         -translate-y-38">
+
+    </div>
+
+  </div>
+  <div class="absolute left-6 top-1/2 -translate-y-1/2
+            hidden md:flex flex-col gap-3
+            bg-white/90 p-2 rounded-xl z-40">
+  <a href="https://github.com/Beese-churger-arch" target="_blank">
+    <img src="./images/git.png" class="w-7 hover:scale-110 transition">
+  </a>
+  <a href="https://www.instagram.com/abiral_stha_/" target="_blank">
+    <img src="./images/insta.png" class="w-7 hover:scale-110 transition">
+  </a>
+  <a href="https://www.linkedin.com/in/abiral-shrestha-115a8a365/" target="_blank">
+    <img src="./images/linkedin.png" class="w-7 hover:scale-110 transition">
+  </a>
+  <a href="https://www.youtube.com/@gamingorderr" target="_blank">
+    <img src="./images/yt.png" class="w-7 hover:scale-110 transition">
+  </a>
+</div>
+
+</section>
+
+
+    <section id="projects" class="py-16 bg-gray-200">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+
+    <h2 class="text-4xl font-bold mb-3">Projects</h2>
+    <p class="text-gray-600 mb-12">Discover some of my projects</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <!-- 2D Platformer Card -->
+      <div class="bg-gray-600 text-white rounded-xl p-4 shadow-lg  max-w-sm mx-auto">
+        <h3 class="text-xl font-bold mb-2">2D Platformer</h3>
+        <p class="text-sm mb-2">A 2D platformer built with Godot.</p>
+        <img src="gif.gif" alt="Gameplay" class="w-full max-h-80 object-contain mx-auto rounded">
+      </div>
+
+      <!-- Fraud Detector Card -->
+      <div class="bg-white rounded-xl p-15 shadow-lg max-w-sm mx-auto">
+        <h3 class="text-xl font-bold mb-2">Fraud Detector</h3>
+        <p class="text-sm mb-2">Detects fraudulent transactions using ML.</p>
+        <img src="fraud.png" class="w-auto max-h-80 mx-auto object-contain rounded ">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+ <section id="education" class="py-20 bg-yellow-500">
+  <div class="max-w-5xl mx-auto px-6">
+
+    <h2 class="text-4xl font-bold text-center mb-10">Education</h2>
+
+    <div class="space-y-8">
+
+      <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col md:flex-row gap-6 items-center">
+        <img src="KhEC.jpg" class="w-40 object-contain rounded">
+        <div>
+          <h3 class="text-2xl font-bold">Bachelor in Computer Engineering</h3>
+          <p class="text-gray-600">Khwopa Engineering College | TU</p>
+          <p class="text-blue-600 font-bold mt-2">2024 – Present</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col md:flex-row gap-6 items-center">
+        <img src="sk.webp" class="w-40 object-contain rounded">
+        <div>
+          <h3 class="text-2xl font-bold">+2 Science</h3>
+          <p class="text-gray-600">SKY Rider College | NEB</p>
+          <p class="text-blue-600 font-bold mt-2">2021 – 2023</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="py-10 bg-blue-800">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <div class="flex flex-row w-full justify-center">
+    <h2 class="text-4xl font-bold mb-3">My </h2>
+    <h2 class="text-4xl font-semibold font-serif text-purple-400 mb-3 ml-3">Skills</h2>
+    </div>
+    <p class="text-white text-lg mb-10">Skills I have sharpened over the years</p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-8 ">
+      <!-- Skill Card -->
+      <div class="border p-6 rounded-xl bg-gray-100 shadow-lg flex flex-col items-center text-center">
+        <img src="ml.jpg " class="w-full h-full" alt="Python Logo">
+        <p class="font-bold text-xl mt-4">Machine Learning</p>
+      </div>
+
+      <!-- Skill Card -->
+      <div class="border p-6 rounded-xl bg-gray-100 shadow-lg flex flex-col items-center text-center">
+        <img src="fen.avif" class="w-full h-full" alt="JavaScript Logo">
+        <p class="font-bold text-xl mt-4">Frontend</p>
+      </div>
+
+      <!-- Skill Card -->
+      <div class="border p-6 rounded-xl bg-gray-100 shadow-lg flex flex-col items-center text-center">
+        <img src="game.jpg" class="w-full h-full" alt="HTML Logo">
+        <p class="font-bold text-xl mt-4">Game development</p>
+      </div>
+
+      <!-- Skill Card -->
+      <div class="border p-6 rounded-xl bg-gray-100 shadow-lg flex flex-col items-center text-center">
+        <img src="pp.jpg" class="w-full h-full" alt="CSS Logo">
+        <p class="font-bold text-xl mt-4">Programming</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact" class="bg-gray-900 py-20">
+  <div class="max-w-7xl mx-auto px-8">
+
+    <div class="grid grid-cols-1 md:grid-cols-2 text-white gap-20 items-start">
+
+      <!-- LEFT SIDE -->
+      <div class="mt-10">
+        <h1 class="text-5xl font-bold mb-20 ">
+          Thank You for Visiting!
+        </h1>
+
+        <p class="mb-4 text-lg font-mono ml-6">abiralshr@gmail.com</p>
+        <p class="mb-4 text-lg font-mono ml-6">9845523441</p>
+        <p class="text-lg font-mono ml-6">
+          Libabi, Bhaktapur
+        </p>
+      </div>
+
+      <!-- RIGHT SIDE (FORM CARD) -->
+      <div class="bg-gray-300 rounded-2xl p-10 shadow-xl text-black">
+        <h2 class="text-3xl font-bold mb-6">
+          In case of any query
+        </h2>
+
+        <form class="max-w-xl space-y-6 " action="https://formspree.io/f/{form_id}" method="post">
+           <div>
+             <label class="block mb-2">Name</label> 
+             <input type="text" class="w-full p-3 rounded-lg bg-white border border-gray-700 text-gray-500" placeholder="Your Name"> 
+            </div> 
+            <div>
+               <label class="block mb-2">Email</label> 
+               <input type="email" class="w-full p-3 rounded-lg bg-white border border-gray-700 text-gray-500" placeholder="Your Email"> 
+              </div> 
+              <div> 
+                <label class="block mb-2">Message</label> 
+                <textarea rows="5" class="w-full p-3 rounded-lg bg-white border border-gray-700 text-gray-500" placeholder="Your Message">
+
+                </textarea> 
+              </div>
+               <button type="submit" class="bg-purple-600 px-6 py-3 rounded-lg hover:bg-purple-500 transition"> Send Message </button> 
+              </form>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+  <script>
+  
+  const words = ["Student","Developer", "Data Scientist", "AI Enthusiast", "Learner"];
+  let i = 0;
+  let j = 0;
+  let isDeleting = false;
+  const speed = 120;
+  const element = document.getElementById("typewriter");
+
+  function type() {
+    let current = words[i];
+
+    if (!isDeleting) {
+      element.textContent = current.slice(0, j++);
+      if (j === current.length + 1) {
+        isDeleting = true;
+        setTimeout(type, 700); 
+        return;
+      }
+    } else {
+      element.textContent = current.slice(0, j--);
+      if (j === 0) {
+        isDeleting = false;
+        i = (i + 1) % words.length;
+      }
+    }
+
+    setTimeout(type, isDeleting ? 60 : speed);
+  }
+
+  type();
+</script>
+<script>
+  const navbar = document.getElementById("Navbar");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      // scrolling → transparent
+      navbar.classList.remove("bg-purple-700");
+      navbar.classList.add("bg-gray-200");
+    } else {
+      // top of page → purple
+      navbar.classList.remove("bg-gray-200");
+      navbar.classList.add("bg-purple-700");
+    }
+  });
+</script>
+
+</body>
+</html>
